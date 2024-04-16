@@ -77,4 +77,14 @@ class LaravelNovaPermission extends Tool
 	{
 		return view('laravel-nova-permission::navigation');
 	}
+
+    /**
+     * Build the menu that renders the navigation links for the tool.
+     *
+     * @return \Illuminate\View\View
+     */
+    public function menu()
+    {
+        return $this->renderNavigation();
+    }
 }
